@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Developer Portfolio</title>
+        <link rel="stylesheet" href="style.css">  <!-- Link to external CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav-container">
+        <nav>
+            <a href="#" class="logo">AJ</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <!-- <header id="home">
+        <div class="hero-content">
+            <h1>Anuj Jagetia</h1>
+            <h2>Roboticist Specialized in Machine Learning</h2>
+            <p>I create elegant solutions to complex problems through code.</p>
+            <div class="cta-buttons">
+                <a href="#experience" class="btn btn-outline"><i class="fas fa-code"></i>Experience</a>
+                <a href="https://drive.google.com/file/d/1sGYW8fc-iMYHeNDEOpSf_hnDPc3eJvh9/view?usp=drive_link" class="btn btn-outline"><i class="fas fa-file-pdf"></i> Resume</a>
+                <a href="https://github.com/anujjagetia5" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i>Contact Me</a>
+            </div>
+        </div>
+    </header> -->
+    <header id="home">
+        <div class="hero-content">
+            <h1>Anuj Jagetia</h1>
+            <h2>Roboticist Specialized in Machine Learning</h2>
+            <p>I create elegant solutions to complex problems through code.</p>
+            <p>I’m a hands-on robotics and AI engineer who loves tackling difficult, real-world challenges by fusing classical approaches with modern deep learning techniques. My work covers every phase of solution-building—from brainstorming and prototyping to full-scale deployment—and I’m always searching for ways to make systems run more efficiently and reliably.</p>
+            <p>Collaboration is at the heart of my process. Whether it’s rapidly prototyping a proof-of-concept or refining a production-ready design, I thrive in team settings and enjoy bringing diverse perspectives together. My ultimate goal is to bridge the gap between cutting-edge research and industry demands, ensuring that each product I deliver embodies the highest standards of quality, performance, and practical value.</p>
+            <p>When I’m not immersed in code or robotics, you’ll find me exploring the latest AI trends, contributing to knowledge-sharing communities, or simply enjoying the outdoors to recharge and find fresh inspiration.</p>
+            <div class="cta-buttons">
+                <a href="#experience" class="btn btn-outline"><i class="fas fa-code"></i>Experience</a>
+                <a href="https://drive.google.com/file/d/1sGYW8fc-iMYHeNDEOpSf_hnDPc3eJvh9/view?usp=drive_link" class="btn btn-outline"><i class="fas fa-file-pdf"></i> Resume</a>
+                <a href="https://github.com/anujjagetia5" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i>Contact Me</a>
+            </div>
+        </div>
+    </header>
+      
+
+    <!-- About Section -->
+    <!-- <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="/api/placeholder/600/600" alt="Your Name">
+            </div>
+            <div class="about-text">
+                <h3>Hello Recruiters!</h3>
+                <p>I’m a hands-on robotics and AI engineer who loves tackling difficult, real-world challenges by fusing classical approaches with modern deep learning techniques. My work covers every phase of solution-building—from brainstorming and prototyping to full-scale deployment—and I’m always searching for ways to make systems run more efficiently and reliably.</p>
+                <p>Collaboration is at the heart of my process. Whether it’s rapidly prototyping a proof-of-concept or refining a production-ready design, I thrive in team settings and enjoy bringing diverse perspectives together. My ultimate goal is to bridge the gap between cutting-edge research and industry demands, ensuring that each product I deliver embodies the highest standards of quality, performance, and practical value.</p>
+                <p>When I’m not immersed in code or robotics, you’ll find me exploring the latest AI trends, contributing to knowledge-sharing communities, or simply enjoying the outdoors to recharge and find fresh inspiration.</p>
+                <p>I'm a hands-on robotics and AI engineer who thrives on solving tough, real-world problems by blending classical approaches with modern deep learning techniques. </p>
+                <p>My experience spans every stage of solution-building—from initial concept and experimentation to final deployment—and I constantly look for ways to improve both performance and reliability. If you need someone who can rapidly prototype, collaborate across teams, and deliver robust solutions, I’m ready to contribute. My goal is to bridge the gap between cutting-edge research and industry needs, ensuring that each product or system I develop stands out in terms of quality, efficiency, and practical value.</p>
+                <p>I'm a passionate software developer with a strong background in web development and a keen eye for design. With over X years of experience in the industry, I've had the opportunity to work on diverse projects that have honed my skills and expanded my technical expertise.</p>
+                <p>I believe in creating software that not only functions flawlessly but also delivers an exceptional user experience. My approach combines technical knowledge with creativity to develop solutions that solve real-world problems.</p>
+                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities like hiking and photography.</p>
+                <div class="cta-buttons" style="justify-content: flex-start; margin-top: 2rem;">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Projects Section -->
+    <section id="experience" style="background-color: #f1f5f9;">
+        <h2>Experience</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/vio.png" alt="Project 1">
+                </div>
+                <div class="project-content">
+                    <h3>VIO Using MSCKF</h3>
+                    <p>I built a stereo vision-aided odometry system using a Multi-State Constraint Kalman Filter (MSCKF) that fuses IMU and camera data for precise real-time trajectory estimation, achieving a ~0.07 m median error on the EuRoC dataset.</p>
+                    <div class="project-links">
+                        <!-- <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a> -->
+                        <a href="https://github.com/anujjagetia5/Visual-Inertial-Odometry-Using-MSCKF" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/deepvio.jpeg" alt="Project 2">
+                </div>
+                <div class="project-content">
+                    <h3>Deep VIO</h3>
+                    <p>I created a deep learning-based VIO framework combining CNNs, LSTM, and FlowNet to fuse visual and inertial data, reaching ~79% accuracy for relative pose prediction on the validation set.</p>
+                    <div class="project-links">
+                        <!-- <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a> -->
+                        <a href="https://github.com/anujjagetia5/Visual-Intertial-Odometry-Using-Feature-Matching" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/edge.png" alt="Project 3">
+                </div>
+                <div class="project-content">
+                    <h3>Edge Detection</h3>
+                    <p>
+                        I developed a Probability of Boundary method that outperforms classic edge detectors by leveraging texture, brightness, and color cues, and also compared four CNN architectures on CIFAR-10 under data augmentation and hyperparameter tuning.
+                    </p>
+                    <div class="project-links">
+                        <!-- <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a> -->
+                        <a href="https://github.com/anujjagetia5/Edge-Detection" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/image_stitch.png" alt="Project 4">
+                </div>
+                <div class="project-content">
+                    <h3>Image Stitching</h3>
+                    <p>
+                        I developed a panoramic image stitching pipeline, combining classical methods (corner detection, homography via RANSAC) and deep-learning-based (supervised and unsupervised) approaches to seamlessly warp and blend multiple images into a single panorama.
+                    </p>
+                    <div class="project-links">
+                        <!-- <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a> -->
+                        <a href="https://github.com/anujjagetia5/Image-Stitching" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/Lego_NeRF.gif" alt="Project 5">
+                </div>
+                <div class="project-content">
+                    <h3>Sfm & NeRF</h3>
+                    <p>
+                        I implemented a Structure-from-Motion workflow—estimating camera poses, 3D points, and bundle adjustment—and integrated a Neural Radiance Field (NeRF) for volumetric rendering, enabling novel view synthesis from sparse image inputs.
+                    </p>
+                    <div class="project-links">
+                        <!-- <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a> -->
+                        <a href="https://github.com/anujjagetia5/Structure-From-Motion" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/Camera_calib.png" alt="Project 6">
+                </div>
+                <div class="project-content">
+                    <h3>Camera Calibration</h3>
+                    <p>
+                        Using Zhang's Camera Calibration, I estimated intrinsic and extrinsic parameters (including radial distortion), then minimized reprojection errors to achieve precise camera calibration and consistent image rectification.
+                    </p>
+                    <div class="project-links">
+                        <!-- <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a> -->
+                        <a href="https://github.com/anujjagetia5/Camera-Calibration" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 7 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <video width="100%" autoplay loop muted playsinline>
+                        <source src="images/vbm_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="project-content">
+                    <h3>Vision-Based Robotic Manipulation</h3>
+                    <p>
+                        Designed a robotic grasping system for conveyor environments using YOLO for object detection and GGCNN for grasp prediction, achieving 92% accuracy. Implemented closed-loop pose correction to enhance grasp stability under conveyor vibrations.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/anujjagetia5/Vision-Based-Robotic-Manipulation" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" style="padding: 5rem 2rem;">
+        <h2>Education</h2>
+        <div class="education-grid" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 3rem;">
+          <!-- Master's Education Card -->
+          <div class="education-card" style="background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); flex: 1 1 calc(50% - 1rem); max-width: 350px;">
+            <a href="https://www.wpi.edu" target="_blank">
+              <img src="images/wpi_logo.png" alt="WPI Logo" style="display: block; margin: 5% auto; max-height: 80px; width: auto;">
+            </a>
+            <div style="padding: 0.3rem; text-align: center;">
+              <h3>Master's of Science</h3>
+              <p>Robotics Engineering</p>
+              <p><strong>Worcester Polytechnic Institute</strong></p>
+              <p>2023 - 2025</p>
+            </div>
+          </div>
+          <!-- Bachelor's Education Card -->
+          <div class="education-card" style="background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); flex: 1 1 calc(50% - 1rem); max-width: 350px;">
+            <a href="https://www.nmims.edu" target="_blank">
+              <img src="images/nmims_logo.png" alt="NMIMS Logo" style="display: block; margin: 5% auto; max-height: 80px; width: auto;">
+            </a>
+            <div style="padding: 0.3rem; text-align: center;">
+              <h3>Bachelor's of Technology</h3>
+              <p>Mechanical Engineering</p>
+              <p><strong>NMIMS, India</strong></p>
+              <p>2018 - 2022</p>
+            </div>
+          </div>
+        </div>
+    </section>
+      
+    
+
+    <!-- Skills Section -->
+    <section id="skills" style="background-color: #f1f5f9;">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <!-- Skills -->
+            <div class="skill-category">
+                <h3>Technical Skills</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://blog.christianperone.com/wp-content/uploads/2018/10/pytorch-logo.png" alt="PyTorch" class="skill-icon">
+                        <span>PyTorch</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" alt="OpenCV" class="skill-icon">
+                        <span>OpenCV</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" alt="TensorFlow" class="skill-icon">
+                        <span>TensorFlow</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://kornia.readthedocs.io/en/latest/_static/img/kornia_logo_only_light.svg" alt="Kornia" class="skill-icon">
+                        <span>Kornia</span>
+                    </div>
+                    <div class="skill-item">
+                        <!-- <i class="fas fa-chart-line"></i> -->
+                        <img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" alt='Scikit-Learn' class='skill-icon' >
+                        <span>Pandas / Scikit-Learn</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" alt="Keras" class="skill-icon">
+                        <span>Keras</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://images.seeklogo.com/logo-png/42/1/matplotlib-logo-png_seeklogo-428047.png" alt="PyTorch" class="skill-icon">
+                        <span>Matplotlib</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://images.seeklogo.com/logo-png/39/1/numpy-logo-png_seeklogo-398690.png" alt="PyTorch" class="skill-icon">
+                        <span>NumPy</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/UbuntuCoF.svg/1024px-UbuntuCoF.svg.png" alt="PyTorch" class="skill-icon">
+                        <span>Ubuntu</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Ros_logo.svg" alt="ROS2" class="skill-icon">
+                        <span>ROS2</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/670px-Matlab_Logo.png" alt="MATLAB" class="skill-icon">
+                        <span>MATLAB</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-cuttlefish"></i>
+                        <span>C++</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="Blender" class="skill-icon">
+                        <span>Blender</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="	https://avatars.githubusercontent.com/u/4408844?v=4&s=160" alt="MoveIt" class="skill-icon">
+                        <span>MoveIt</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Gazebo_logo_without_text.svg" alt="Gazebo" class="skill-icon">
+                        <span>Gazebo-11</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>SLAM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 5rem 2rem; text-align: center;">
+        <h2>Get in Touch!</h2>
+        
+        <div class="contact-info">
+            <!-- Email -->
+            <div class="contact-links">
+            <a href="mailto:ajagetia@wpi.edu">
+                <i class="fas fa-envelope"></i>
+            </a>
+            </div>
+            
+            <!-- Phone -->
+            <div class="contact-links">
+            <a href="tel:+15085020199" >
+                <i class="fas fa-phone"></i>
+            </a>
+            </div>
+        
+            <!-- LinkedIn -->
+            <div class="contact-links">
+            <a href="https://www.linkedin.com/in/anuj-jagetia" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Anuj Jagetia. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="script.js"></script>
+</body>
+
+</html>
