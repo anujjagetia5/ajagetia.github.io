@@ -18,10 +18,13 @@ body {
     background-color: var(--light);
     color: var(--dark);
     line-height: 1.6;
+    height: auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 header {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,6 +34,9 @@ header {
     color: white;
     text-align: center;
     position: relative;
+    height: auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Makes the entire header a flex container */
@@ -60,6 +66,8 @@ header {
   }  
 
 .nav-container {
+    height: auto;
+    min-height: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -310,6 +318,8 @@ section h2::after {
 }
 
 .skills-container {
+    height: auto;
+    min-height: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -484,6 +494,8 @@ footer {
     
     .nav-container {
         padding: 0.8rem 1rem;
+        height: auto;
+        min-height: 100%;
     }
     
     .nav-links {
@@ -579,6 +591,9 @@ body {
     color: white;
     position: relative;
     overflow: hidden;
+    height: auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Creates the torch effect */
@@ -596,6 +611,7 @@ body {
 
 /* Styling for everything to be initially hidden */
 .container {
+    height:auto;
     position: relative;
     z-index: 1;
     padding: 20px;
