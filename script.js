@@ -9,6 +9,25 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Mobile menu toggle
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+}
+
+// Close mobile menu when a link is clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+        }
+    });
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -48,29 +67,6 @@ if (contactForm) {
     });
 }
 
-
-// Contact form submission handler
-document.addEventListener("DOMContentLoaded", function () {
-    const contactForm = document.getElementById("contactForm");
-
-    contactForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
-
-        if (name && email && message) {
-            alert(`Thank you, ${name}! Your message has been sent.`);
-            contactForm.reset();
-        } else {
-            alert("Please fill in all the fields.");
-        }
-    });
-});
-
-
-
 // Navigation bar background change on scroll
 const navContainer = document.querySelector('.nav-container');
 
@@ -82,14 +78,4 @@ window.addEventListener('scroll', () => {
         navContainer.style.background = 'rgba(0, 0, 0, 0.8)';
         navContainer.style.boxShadow = 'none';
     }
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
-
-    menuToggle.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-    });
 });
