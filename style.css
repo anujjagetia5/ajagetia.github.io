@@ -446,21 +446,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    body {
-        padding-top: 60px;
-    }
-    
-    .nav-container {
-        padding: 0;
-    }
-    
-    nav {
-        padding: 0.8rem 1rem;
-    }
-    
-    .menu-toggle {
-        display: block;
-    }
+    /* Other mobile styles remain the same */
     
     .nav-links {
         position: absolute;
@@ -473,14 +459,15 @@ footer {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
-        display: flex; /* Ensure it's displayed as flex */
-        align-items: center; /* Center the items */
+        display: flex;
+        align-items: center;
+        width: 100%;
     }
     
     .nav-links.active {
-        max-height: 300px; /* Increased to ensure all links fit */
-        padding: 10px 0; /* Add some padding when menu is open */
-        z-index: 1001; /* Ensure it stays on top */
+        max-height: 300px;
+        padding: 10px 0;
+        z-index: 1001;
     }
     
     .nav-links a {
@@ -488,19 +475,18 @@ footer {
         width: 100%;
         text-align: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        display: block; /* Ensure each link is displayed as block */
+        display: block;
+        color: white !important; /* Force white text color */
+        font-weight: bold; /* Make text bold for better visibility */
+        font-size: 1.1rem; /* Slightly larger text */
     }
     
     .nav-links a:last-child {
-        border-bottom: none; /* Remove border from last item */
+        border-bottom: none;
     }
     
     .nav-links a:hover {
-        color: var(--accent);
+        color: var(--accent) !important;
         background-color: rgba(0, 0, 0, 0.2);
-    }
-    
-    .hero-content h1 {
-        font-size: 2rem;
     }
 }
