@@ -445,15 +445,22 @@ footer {
     }
 }
 
-/* UPDATED CSS FOR MOBILE NAVIGATION WITH BACKGROUND FIX */
-
-/* First, ensure the hamburger icon is visible */
 @media (max-width: 768px) {
+    /* Hamburger icon styling */
     .menu-toggle {
         display: block;
-        color: white;
+        color: white !important; /* Force white color for icon */
         font-size: 1.5rem;
         cursor: pointer;
+        z-index: 1002; /* Ensure it's on top */
+        position: relative; /* Ensure it has position context */
+    }
+    
+    /* Explicitly style the hamburger icon */
+    .menu-toggle i {
+        color: white !important; /* Force white color for FontAwesome icon */
+        visibility: visible !important;
+        opacity: 1 !important;
     }
     
     /* Fix for mobile navigation links */
@@ -491,7 +498,6 @@ footer {
         text-decoration: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         background-color: var(--dark); /* Use your dark color variable */
-        /* Remove any properties that might hide text */
         visibility: visible !important;
         opacity: 1 !important;
     }
