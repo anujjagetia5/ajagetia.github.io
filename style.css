@@ -476,7 +476,7 @@ footer {
         text-align: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         display: block;
-        color: white !important; /* Force white text color */
+        color: black !important; /* Force white text color */
         font-weight: bold; /* Make text bold for better visibility */
         font-size: 1.1rem; /* Slightly larger text */
     }
