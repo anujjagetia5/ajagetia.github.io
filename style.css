@@ -473,10 +473,14 @@ footer {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
+        display: flex; /* Ensure it's displayed as flex */
+        align-items: center; /* Center the items */
     }
     
     .nav-links.active {
-        max-height: 300px;
+        max-height: 300px; /* Increased to ensure all links fit */
+        padding: 10px 0; /* Add some padding when menu is open */
+        z-index: 1001; /* Ensure it stays on top */
     }
     
     .nav-links a {
@@ -484,26 +488,19 @@ footer {
         width: 100%;
         text-align: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: block; /* Ensure each link is displayed as block */
+    }
+    
+    .nav-links a:last-child {
+        border-bottom: none; /* Remove border from last item */
+    }
+    
+    .nav-links a:hover {
+        color: var(--accent);
+        background-color: rgba(0, 0, 0, 0.2);
     }
     
     .hero-content h1 {
         font-size: 2rem;
     }
-
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #fff;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
 }
-
