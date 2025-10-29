@@ -446,78 +446,46 @@ footer {
 }
 
 @media (max-width: 768px) {
-    /* Hamburger icon styling */
+    body {
+        padding-top: 60px;
+    }
+    
+    .nav-container {
+        padding: 0;
+    }
+    
+    nav {
+        padding: 0.8rem 1rem;
+    }
+    
     .menu-toggle {
         display: block;
-        color: white !important; /* Force white color for icon */
-        font-size: 1.5rem;
-        cursor: pointer;
-        z-index: 1002; /* Ensure it's on top */
-        position: relative; /* Ensure it has position context */
     }
     
-    /* Explicitly style the hamburger icon */
-    .menu-toggle i {
-        color: white !important; /* Force white color for FontAwesome icon */
-        visibility: visible !important;
-        opacity: 1 !important;
-    }
-    
-    /* Fix for mobile navigation links */
     .nav-links {
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
-        background-color: rgba(30, 41, 59, 0.95); /* Dark background */
+        background-color: rgba(30, 41, 59, 0.95);
         flex-direction: column;
         gap: 0;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
-        width: 100%;
-        z-index: 1001;
     }
     
-    /* When active class is added, show the menu with dark background */
     .nav-links.active {
         max-height: 300px;
-        padding: 10px 0;
-        background-color: var(--dark); /* Use your dark color variable */
     }
     
-    /* Critical fix - ensure text is visible with proper contrast */
     .nav-links a {
         padding: 1rem;
         width: 100%;
         text-align: center;
-        display: block;
-        color: white !important; /* Force white text */
-        font-weight: bold;
-        font-size: 1.1rem;
-        text-decoration: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        background-color: var(--dark); /* Use your dark color variable */
-        visibility: visible !important;
-        opacity: 1 !important;
     }
     
-    .nav-links a:last-child {
-        border-bottom: none;
+    .hero-content h1 {
+        font-size: 2rem;
     }
-    
-    .nav-links a:hover {
-        color: var(--accent) !important;
-        background-color: rgba(0, 0, 0, 0.5); /* Darker background on hover */
-    }
-    
-    /* Ensure no overflow hiding is applied to nav container */
-    .nav-container {
-        overflow: visible !important;
-    }
-    
-    /* Fix for Safari/iOS specific issues */
-    nav {
-        overflow: visible !important;
-    }
-}
